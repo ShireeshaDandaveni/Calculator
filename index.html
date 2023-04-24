@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Calculator</title>
+   </head>
+   <link rel="stylesheet" href="index.css">
+   <script src="index.js" defer></script>
+
+<body>
+<div id="container">
+    <form name="cform">
+        <input name="ans" id="display">
+        <br>
+        <input onmousedown="clicksound()" class="a" type="button" value="1" onclick="cform.ans.value+='1'">
+        <input onmousedown="clicksound()" class="a" type="button" value="2" onclick="cform.ans.value+='2'">
+        <input onmousedown="clicksound()" class="a" type="button" value="3" onclick="cform.ans.value+='3'">
+        <input onmousedown="clicksound()" class="a" type="button" value="+" onclick="cform.ans.value+='+'">
+        <br>
+        <input onmousedown="clicksound()" class="a" type="button" value="4" onclick="cform.ans.value+='4'">
+        <input onmousedown="clicksound()" class="a" type="button" value="5" onclick="cform.ans.value+='5'">
+        <input onmousedown="clicksound()" class="a" type="button" value="6" onclick="cform.ans.value+='6'">
+        <input onmousedown="clicksound()" class="a" type="button" value="-" onclick="cform.ans.value+= '-'">
+        <br>
+        <input onmousedown="clicksound()" class="a" type="button" value="7" onclick="cform.ans.value+='7'">
+        <input onmousedown="clicksound()" class="a" type="button" value="8" onclick="cform.ans.value+='8'">
+        <input onmousedown="clicksound()" class="a"  type= "button" value="9" onclick="cform.ans.value+='9'">
+        <input onmousedown="clicksound()" class="a" type="button" value="" onclick="cform.ans.value+=''">
+        <br>
+        <input onmousedown="clicksound()" class="a" type="button" value="%" onclick="cform.ans.value+='%'">
+        <input onmousedown="clicksound()" class="a" type="button" value="0" onclick="cform.ans.value+='0'">
+        <input onmousedown="clicksound()" class="a" type="button" value="." onclick="cform.ans.value+='.'">
+        <input onmousedown="clicksound()" class="a" type="button" value="/" onclick="cform.ans.value+='/'">
+        <br>
+        <input onmousedown="clicksound()" type="button" id="equ" value="=" onclick="cform.ans.value=eval(cform.ans.value)">
+        <input onmousedown="clicksound()" type="button" id="clear" value="c" onclick="cform.ans.value=''">
+        <br>
+       
+        
+</form> 
+ </div>
+ 
+</body>
+</html>
